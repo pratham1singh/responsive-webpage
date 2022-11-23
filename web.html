@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Of India</title>
+    <style>
+       *{
+        margin: 0;padding: 0;border: 0;
+       }
+       html, body {
+         width: 100%;
+         overflow-x: hidden;
+}
+        #back{
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            background-color: aqua;
+            background-image: url(back4.jpg);
+            background-size: cover;
+            background-attachment:fixed;
+            
+        }
+        body{
+            height:1070px;
+        }
+        #nav{
+            width: 100%;
+            height: 4rem;
+            /* height: 1rem; */
+            background-color:rgb(3, 3, 73);
+            position: fixed;
+            z-index: 5;
+            /* display: flex;
+             align-content: center;
+            align-items: center; */
+           
+        }
+        #apps{
+            display:flex;
+            background-color:black;
+            position:fixed;
+            top: 95%;
+            
+        }
+        
+        #underl{
+            background-color:rgb(255, 102, 0);
+            width: 100%;
+            height: 2px;
+            position: fixed;
+            top:4rem ;
+            z-index: 5;
+            animation: load 2s infinite ease-in-out;
+        }
+        @keyframes load{
+            0%{background-color:rgb(255, 102, 0) ;}
+            100%{background-color: aliceblue;}
+        }
+        #logo,p{
+            color:rgb(255, 102, 0);
+            font-size:2rem;
+            display: inline;
+        }
+        #logo:hover{
+            color: aliceblue;
+        }
+        
+        #logop{
+            color: aliceblue;
+            display: inline;
+            font-size: 1rem;
+        }
+        #logop:hover{
+            color: rgb(255, 102, 0);
+        }
+        #opt{
+            float: right;
+            translate: 0 50%;
+            display:inline;
+        }
+        ul{
+            color: aliceblue;
+           
+           
+            }
+        li{
+            position: relative;
+            display: inline;
+            margin: 1rem;
+            
+           
+        }
+        li a{
+            color: whitesmoke;
+            text-decoration: none;
+
+        }
+        li a:hover{
+            color: rgb(255, 102, 0);
+        }
+        #searin{
+            display: none;
+            width: 8rem;
+            max-width: 8rem;
+            
+        }
+        #sear:hover
+        #searin
+        {
+            display: inline;
+        } 
+        li:hover{
+            color: rgb(255, 102, 0);
+        }
+       
+        #drop{
+            width:17%;
+            background-color:rgb(255, 102, 0);
+            position: relative;
+            /* top: -0.3rem; */
+            left: 80%;
+            box-shadow: 0 0 10px 0 black;
+            display:none;
+        }
+       
+        #drop a{
+            display: block;
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 70%;
+            margin: 1px;
+        }
+       
+        #menu{
+            position: relative;
+            float: right;
+            left: -2%;
+            top: 50%;
+            translate: 0 -50%;
+            display: inline;
+           
+        }
+        
+        
+         #menu,#hidemenu{
+            
+            display: none;
+            color: aliceblue;
+            }
+            #menu:hover{
+            color: rgb(255, 102, 0);
+
+            }
+            
+        a:hover{
+            color:black;
+        }
+        #para1,#para2{
+            margin-bottom: 10px;
+        }
+        #home{
+            position: relative;
+            top: 0.1rem;
+            display: inline;
+        }
+        #colors{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            position: relative;
+            left: 69%;
+            top: -60%;
+        }
+        /* #apps{
+            display: flex;
+            position:fixed;
+           z-index: 5;
+            
+
+        } */
+        /* #gmail{
+        position: fixed;
+        
+        height: 30px;
+        left: 95%;
+        top: 90%
+        
+       }
+       #linkedin{
+        position: fixed;
+        
+        height: 30px;
+        left: 91%;
+        top: 90%
+        
+       }  */
+       /* #linkedin a:hover{
+        color:rgb(255, 102, 0);
+       }
+       #gmail a:hover{
+        color:rgb(255, 102, 0);
+       }
+       svg{
+        background-color:black;
+        margin: 4px;
+        
+       }
+        */
+        
+       
+        @media screen and (max-width:672px) {
+              /*first*/
+             
+            #opt{
+                display:none;
+            }
+            #menu,#hidemenu{
+                display: inline;
+            }
+           
+          #home:hover{
+            color:rgb(255, 102, 0);
+        }
+            #menu{
+                position: relative;
+                top: 1.7rem;
+                display: inline;
+            }
+            #drop
+            a:hover{
+                background-color: rgb(255, 102, 0);
+                box-shadow: 0 0 1px 0 black;
+            }
+            /* @media screen and (min-width:541px)
+        {
+            
+        } */
+        #para1,#para2{
+            flex-wrap: wrap;
+            
+        }
+        svg{
+        height: 20px;
+        /* margin: 8px; */
+       }
+        
+        }
+        @media screen and (max-width:827px){
+            li{
+            position: relative;
+            display: inline;
+            margin: 3px;
+            
+           
+        }
+        #input{
+            width: 3rem;
+        }
+        
+        /* #gmail{
+        position: fixed;
+        
+        left: 90%;
+        top: 90%
+        
+       }
+       #linkedin{
+        position: fixed;
+        
+        left: 81%;
+        top: 90%
+       } */
+       
+
+        }
+        #para1 ,#para2{
+            background-color: whitesmoke;
+            position: relative;
+            top: 10rem;
+            width: 90%;
+            border: 3px solid rgb(255, 102, 0);
+            left: 5%;
+            text-align: center;
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            
+        }
+        #photo1,#text1,#text2,#photo2{
+            
+            position: relative;
+            padding: 10px 10px;
+           
+
+        }
+        
+        #headgreet{
+            position: relative;
+            top: 90px;
+        }
+        /* #colors{
+            background-color: aliceblue;
+            width: 1px;
+            height: 10px;
+        } */
+        .oweb{
+            margin: 4px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="back">
+        <div id="nav">
+          <div id="logo" onmouseenter="changered()" onmouseout="changewh()">TED </div  onmouseenter="changewh()"><p id="logop">voice of india</p>
+          <div id="hidemenu" >
+            
+            <div id="menu" onmousedown="dropo()" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg></div>
+              
+            <div id="drop"  >
+                <a href="">Home</a>
+                <a href="">watch</a>
+                <a href="">Discover</a>
+                <a href="">Attend</a>
+                <a href="">Participate</a>
+                <a href="">Sign In</a>
+                <a href="" id="textc">Text color</a>
+             </div>
+          </div>
+          
+           <div id="opt"><ul>
+            <li id="home"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+              </svg></li>
+            <li >Watch</li>
+            <li>Discover</li>
+            <li>Attend</li>
+            <li>Participate</li>
+            <li>Sign in</li>
+            
+            <li><a href="form.html">Log In</a></li>
+            <li id="sear"><input type="text" id="searin" placeholder="search"> <svg id="sbut" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></li>
+            <!-- <li id="sbut"></li> -->
+           </ul></div>
+        </div>
+        <div id="underl"></div>
+        <div id="headgreet" style="color: white;">Hello,ABC</div>
+        <div id="para1"><div id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, unde facilis. Corrupti quia consectetur cupiditate aperiam unde commodi, aliquam rem aliquid modi, officiis impedit amet vitae molestiae fuga eaque soluta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, nobis quidem. Sunt quaerat ad aliquid voluptas delectus placeat quae ipsum commodi, hic aut velit saepe a possimus officiis repellat consequuntur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique illo quaerat delectus libero sequi cupiditate inventore, expedita est ab laudantium nulla laboriosam veniam! Maxime magni dicta ullam eos atque totam!
+            
+        </div> <div id="photo1"><a href="https://en.wikipedia.org/wiki/Narendra_Modi"><img src="modi.jpeg" alt="" width="160px" height="100px" ></a></div></div>
+        <div id="para2">
+            <div id="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aliquid rerum molestias. Magni impedit voluptas error voluptatibus dicta iusto dolorem odit quos praesentium modi hic iste, minus autem expedita Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, laudantium asperiores? Provident, quaerat voluptates laboriosam quia iure vero quibusdam velit, aspernatur quisquam ullam adipisci similique ducimus ad voluptatibus quis mollitia.</div>
+            <div id="photo2"><img src="amit.jpeg" alt="" width="160px" height="100px"></div>
+        </div>
+       
+         <div id="apps"><!--<div id="gmail" class="oweb"><a href="https://www.gmail.com"></a></div> -->
+        <div id="linkedin" class="oweb"><a href="https://www.linkedin.com/login"><img src="linkedin.png" alt="" width="25px" height="25px"></a></div>
+        <div id="insta" class="oweb"><a href=""><img src="instagram.png" alt="" width="25px" height="25px"></a></div>
+        <div id="twitter" class="oweb"><a href=""><img src="twitter.png" alt="" width="25px" height="25px"></a></div>
+    </div>
+    <div id="colors"></div>
+
+</div>
+    <script>
+        document.write(name)
+        function changered()
+        {
+            document.getElementById("logop").style.color="rgb(255, 102, 0)"
+        }
+        function changewh()
+        {
+            document.getElementById("logop").style.color="white"
+        }
+        function dropo()
+        {   
+            if (document.getElementById("drop").style.display =="none")
+            document.getElementById("drop").style.display="block"
+            else
+            document.getElementById("drop").style.display="none"
+
+        }
+        function prname()
+        {
+            document.getElementById("headgreet").innerHTML="Hello,"+name.value
+        }
+        prname()
+        
+    </script>
+</body>
+</html>
